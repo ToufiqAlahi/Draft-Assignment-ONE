@@ -1,56 +1,62 @@
-/* Global style rule: */
+/* ######## Global style rule: ######## */
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-
 }
+
+header {
+
+    margin-left: 5%;
+    margin-right: 3%;
+    margin-bottom: 100px;
+}
+
+h1 span {
+    color: #c17;
+}
+
+p {
+    color: #858585;
+}
+
+/* ######## Global style rule ends ######## */
 
 .flexible-container {
     display: flex;
-    padding-bottom: 150px;
+    margin-bottom: 150px;
+    /* padding-bottom: 50px; */
+    /* margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 3%;
+    */
 }
 
 .half-width {
     float: left;
     width: 45%;
-    /* border: solid 5px #232320; */
-    padding-left: 5%;
     padding-right: 0%;
-    margin-left: 1%;
-    margin-right: 1%;
 }
-
 
 .half-width img {
     float: left;
     width: 100%;
+    margin-right: 10px;
 }
 
-/* h1{
+.image-top {
+    margin-left: 110px;
+}
+
+/* ######## Top side styles: ######## */
+.colored-heading {
     color: #232320;
-    font-family: 'Crete Round', serif;
-    font-size: 3.5em;
-    letter-spacing: 2.5px;
-    line-height: 110%;
-    margin: 0;
-    transition: all .5s ease-in-out;
-
-} */
-h1 {
-    color: #232320;
-    font-family: 'Crete Round', serif;
-    font-size: 50px;
-    /* transition: all .5s ease-in-out; */
-}
-
-h1 span {
-    color: #e56;
-}
-
-/* p has the class: introduction-info */
-p {
-    color: #858585;
-
+    font-family: 'Yeseva One', cursive;
+    font-size: 60px;
+    line-height: 80px;
+    padding-left: 20px;
+    border-left: 8px solid;
+    border-image: linear-gradient(180deg, rgb(252, 0, 176), rgb(247, 3, 125));
+    border-image-slice: 1;
 }
 
 .anchor-btn {
@@ -60,121 +66,181 @@ p {
     border-radius: 5px;
     padding: 10px 20px;
     font-weight: 900;
+
 }
 
-.top-banner {
-    background-image: url("../images/top-banner.png");
-    background-repeat: no-repeat;
+/* MY Mission Section containing 3 cards with illustration */
+#mission-heading {
+    color: #232320;
+    font-family: 'Yeseva One', cursive;
+    font-size: 50px;
+    line-height: 80px;
+    text-align: center;
 }
 
-.middle-portion {
+.one-third-width {
+    float: left;
+    width: 30%;
+    padding-left: 1.5%;
+    padding-right: 1%;
+    margin-right: 2%;
+    border-radius: 5px;
+}
+
+.one-third-width img {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+#left-card {
+    background: rgba(72, 162, 172, 0.241);
+    border-radius: 26px;
+}
+
+#middle-card {
+    background: rgba(255, 89, 89, 0.1);
+    border-radius: 26px;
+}
+
+#right-card {
+    background: #FFF4D6;
+    border-radius: 26px;
+}
+
+
+/* middle portion */
+
+.upper-middle {
     background-image: url("../images/middle-background.png");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: left;
+    background-size: 15%;
 }
 
-.middle-portion .introduction-info {
-    padding-right: 1%;
+#develop-texts {
+    margin-left: 50px;
+    padding-left: 10%;
+    padding-right: 5%;
 }
 
+.upper-middle img {
+    margin-left: 15%;
+    width: 95%;
+    height: 95%;
+}
 
-/*  experience section */
+#community-texts {
+    padding-left: 5%;
+    padding-right: 10%;
+}
 
+.lower-middle {
+    background-image: url("../images/middle-background.png");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 15%;
+    padding-right: 5%;
+    padding-bottom: 100px;
+}
 
-/* .experience-section h1 {
+.lower-middle img {
+    width: 95%;
+    height: 95%;
+    margin-right: 5%;
+}
+
+/* ######## Career overview styles: ######## */
+.experience-section h1 {
     margin-left: 1%;
     padding-left: 5%;
-} */
+}
 
 .experience-section {
-
-    background-image: url("../images/Experience-background.png");
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 5%;
+    float: left;
+    padding-right: 1%;
+    margin-right: 3%;
+    margin-left: 5%;
+    margin-bottom: 150px;
 }
 
 .experience-heading {
-    color: #232320;
-    font-family: 'Crete Round', serif;
-    font-size: 50px;
-    /* margin-left: 1%;
-    padding-left: 1%; 
-    
-    ################
-
-    color change korbo !!!!
-    */
-
-
+    color: #4b4b4ace;
+    font-family: 'Yeseva One', cursive;
+    font-weight: 10;
+    font-size: 35px;
     text-align: center;
-    padding-bottom: 90px;
-}
-
-.one-third-width h1 {
-    color: #232320;
-    font-family: 'Crete Round', serif;
-    font-size: 40px;
-    /* margin-left: 0%;
-    padding-left: 0%; */
-
 }
 
 .work-details {
     color: #d28;
+    padding-left: 3%;
+}
 
+.exp-details {
+    padding: 3%;
 }
 
 .working-years {
     color: #545451b3;
     font-size: 20px;
     font-family: Monospace, Arial, Helvetica, sans-serif;
-
 }
 
-.one-third-width {
-    float: left;
-    width: 31%;
-    /* border: solid 5px #232320; */
-    padding-left: 1.5%;
-    padding-right: 1%;
-    margin-left: 1.5%;
-    margin-right: 1.5%;
+#left-exp-card {
+    border-left: 8px solid;
+    border-image: linear-gradient(180deg, #FFFB7D, #0dd86c);
+    border-image-slice: 1;
+    margin-right: 3%;
     box-shadow: 12px 15px 32px 1px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
-    /* height: 80%; */
-    /* background-color: white; */
-
-
 }
 
-#left-work-detail {
-    border-left: 8px solid;
-    border-image: linear-gradient(180deg, #FFFB7D,#0dd86c);
-    border-image-slice: 1;
-
-}
-
-#middle-work-detail {
+#middle-exp-card {
     border-left: transparent 8px solid;
-    border-image: linear-gradient(180deg,#eac,#fa0075);
+    border-image: linear-gradient(180deg, #eac, #fa0075);
     border-image-slice: 1;
     background-color: white;
+    margin-right: 20px;
+
+    box-shadow: 12px 15px 32px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
 }
 
-#right-work-detail {
+#right-exp-card {
     border-left: 8px solid;
-    border-image: linear-gradient(180deg,cyan, blue);
+    border-image: linear-gradient(180deg, cyan, blue);
     border-image-slice: 1;
+    margin-left: 20px;
+    box-shadow: 12px 15px 32px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
 }
 
-#right-work-detail img{
-    width: 98%;
-    margin-right: 5%;
+.exp-card img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90%;
 }
 
-footer{
+
+
+footer {
     font-size: 12px;
     text-align: center;
-    margin-bottom: 100px;
+
+    float: right;
+
+    width: 100%;
+    height: 200px;
+    background-color: #0B0D17;
+    ;
+    color: white;
+}
+
+#footer-heading {
+    color: #ffffff;
+    font-family: 'Yeseva One', cursive;
+    font-size: 60px;
+    line-height: 80px;
+    padding-left: 20px;
 }
