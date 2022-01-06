@@ -1,8 +1,9 @@
+/* ############################### Tried to maintain the CSS Specificity Hierarchy ############################### */
+
 /* Global Style Rule */
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
-
 }
 
 header {
@@ -12,7 +13,7 @@ header {
 }
 
 h1 span {
-    color: #c17;
+    color: #d28;
 }
 
 p {
@@ -34,10 +35,9 @@ footer {
 /* Global Style ENDS */
 
 /* Navigation Bar Styles */
-
 /* Added a black background color to the top navigation */
 .topnav {
-    background-color: #e49;
+    background-color: #d28;
     overflow: hidden;
 }
 
@@ -52,7 +52,7 @@ footer {
     font-size: 20px;
 }
 
-/* Changed the color of links on hover */
+/* Changed the color of links on hover = green */
 .topnav a:hover {
     background-color: rgb(0, 252, 134);
     color: black;
@@ -60,7 +60,7 @@ footer {
 
 /* Added a color to the active/current link */
 .topnav a.active {
-    background-color: #319;
+    background-color: rgb(122, 0, 243);
     color: white;
 }
 
@@ -97,13 +97,26 @@ footer {
     letter-spacing: 2px;
 }
 
+/* Each Anchor Button has a common Explore icon */
 .anchor-btn {
+    width: 50%;
+    height: 100%;
     text-decoration: none;
     color: white;
-    background-image: linear-gradient(45deg, #e6b, #c27);
+    padding-left: 10px;
+    background: #d28;
+    background-image: url(../icons/explore.png);
+    background-repeat: no-repeat;
+    background-position: 10px 6px;
+    background-size: 32px;
     border-radius: 5px;
     padding: 10px 20px;
     font-weight: 900;
+}
+
+.anchor-btn span {
+    text-align: right;
+    padding-left: 30px;
 }
 
 .image-top {
@@ -133,16 +146,19 @@ footer {
     margin-bottom: 20px;
 }
 
+/* Left Mission Card Styles */
 #left-card {
     background: rgba(72, 162, 172, 0.241);
     border-radius: 26px;
 }
 
+/* Middle Mission Card Styles */
 #middle-card {
     background: rgba(255, 89, 89, 0.1);
     border-radius: 26px;
 }
 
+/* Right Mission Card Styles */
 #right-card {
     background: #fff4d6;
     border-radius: 26px;
@@ -278,4 +294,8 @@ footer {
     font-size: 60px;
     line-height: 80px;
     padding-left: 20px;
+}
+
+#copyright-text{
+    color: rgba(255, 217, 0, 0.926);
 }
